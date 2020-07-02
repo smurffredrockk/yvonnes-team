@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>teen turn speech bubble</title>
+    <link rel="stylesheet" type="text/css" href="bubble.css">
+  </head>
+  <body>
+  	<button class="myButton" onclick = "random_star()"> 
+		click here to see which tick tock star I like today!
+	</button> 
+
+    <div class="spacer"></div>
+
+    <div id = "cfg_speech" class="speech bottom">
+      "Maybe it's me!"
+    </div>
+	
+	<div style="text-align: left"><img src="character.png"  /></div
+	
+	<img style="float: left; margin: 0px 15px 15px 0px;" src="character.png" />
+
+    <div class="spacer"></div>
+	
+	
+	<script> 
+		var speech = document.getElementById('cfg_speech'); 
+		
+		var arr = ["Sky & Tami ", "Joey Klaasen", 
+				"Suraj Pal Singh", "Avani Gregg", "Jordi Koalitic", "Aashika Bhatia", "Josh Richards", "yvonne!"]; 
+				
+		
+		
+		function random_star() { 
+			speech.innerHTML = 
+				arr[Math.floor(Math.random() * arr.length)]; 
+				
+		} 
+				
+	</script> 
+
+	
+	
+
+  </body>
+</html>
